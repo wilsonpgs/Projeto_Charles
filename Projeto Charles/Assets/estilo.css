@@ -1,0 +1,640 @@
+/*============================TELA CADASTRO==============================*/
+
+body.pagina-cadastro {
+	min-height: 100vh;
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background: linear-gradient(to bottom, #ffffff, #a9c5ee);
+	overflow-x: hidden;
+}
+
+body.pagina-cadastro .rodape {
+    margin-top: 250px;
+}
+
+.container {
+	max-width: 600px;
+	margin: auto;
+	padding: 20px;
+	background: transparent;
+}
+
+h1 {
+	color: #193B69;
+	margin-bottom: 5px;
+}
+
+.subtitulo {
+	color: #5a5a5a;
+	font-style: italic;
+	margin-top: 8px;
+}
+
+.formulario {
+	padding: 20px;
+}
+
+label {
+	display: block;
+	margin-top: 17px;
+	font-weight: bold;
+	color: #193B69;
+}
+
+input[type="text"],
+input[type="password"] {
+	width: 100%;
+	padding: 10px;
+	margin-top: 5px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	background-color: #f2f2f2;
+}
+
+.duplo {
+	display: flex;
+	gap: 27px;
+}
+
+.duplo label {
+	flex: 1;
+}
+
+.sexo {
+	margin: 5px 0;
+	color: #193B69;
+}
+
+.sexo span {
+	display: block;
+	margin-top: 10px;
+	font-weight: bold;
+	margin-bottom: -7px;
+}
+
+.sexo label {
+	font-weight: bold;
+}
+
+.botoes {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	margin-top: 20px;
+}
+
+button {
+	padding: 10px 30px;
+	font-weight: bold;
+	border: none;
+	border-radius: 30px;
+	cursor: pointer;
+}
+
+.cadastrar {
+	background-color: #193B69;
+	color: white;
+}
+
+.voltar {
+	background-color: #666;
+	color: white;
+}
+
+.topo {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.edge-icon-header {
+	margin-top: 4px;
+}
+
+.logo-text-header {
+	margin-top: 2px;
+	margin-bottom: 4px;
+}
+
+.bloco-senha {
+	flex: 1;
+}
+
+/*============================MODO ESCURO==============================*/
+
+body.modo-escuro {
+	background: #131313 !important;
+	color: #4169e1 !important;
+}
+
+body.modo-escuro .formulario,
+body.modo-escuro input,
+body.modo-escuro textarea,
+body.modo-escuro select {
+	background-color: #131313;
+	color: #ffffff;
+}
+
+body.modo-escuro h1 {
+	color: #4169e1 !important;
+}
+
+body.modo-escuro .formulario label,
+body.modo-escuro .formulario span {
+	color: #4169e1 !important;
+	}
+
+#ModoEscuro {
+	font-size: 24px;
+	background-color: transparent;
+	border: none;
+	position: absolute;
+	top: 100%;
+	left: 3px;
+	margin-top: 5px;
+	color: #193B69;
+}
+
+body.modo-escuro .botoes p {
+	color: #4169e1 !important;
+}
+
+/*============================ERRO==============================*/
+
+.msgerro,
+.senhaerrada {
+    display: none;
+    color: red;
+    font-weight: bold;
+}
+
+.msgerro {
+    text-align: center;
+}
+
+.senhaerrada {
+    text-align: right;
+}
+
+.msgerro p {
+	margin-top: 30px;
+	margin-bottom: -10px;
+}
+
+.senhaerrada p {
+	margin-top: 20px;
+	margin-bottom: -10px;
+}
+
+
+.msgerrologin {
+    display: none;
+    text-align: center;
+}
+
+.msgerrologin p {
+    color: red;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: -5px;
+}
+
+/*============================TELA LOGIN==============================*/
+
+body.pagina-login {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(to right, #93b8ee, #ffffff);
+	overflow-x: hidden;
+	font-family: arial , sans-serif;
+}
+
+.centralizar {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+body.pagina-login .login {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #ffffff;
+	padding: 20px 80px;
+	border-radius: 10px;
+	box-shadow: 0 8px 15px rgb(167, 167, 167);
+}
+
+body.pagina-login .login input::placeholder {
+	color: #193B69;
+	opacity: 1;
+}
+
+body.pagina-login .login label {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-weight: normal;
+	color: #193B69;
+}
+
+body.pagina-login .login label i {
+	position: relative;
+	top: 4px;
+	font-size: 35px;
+}
+
+body.pagina-login .login input {
+	padding: 10px;
+	border: 1px solid rgb(167, 167, 167);
+	border-radius: 4px;
+	background-color: #ffffff;
+	font-size: 18px;
+	color: #193B69;
+}
+
+body.pagina-login .login button {
+	width: fit-content;
+	padding: 10px 20px;
+	border-radius: 15px;
+	background-color: #4169e1;
+	color: white;
+	font-weight: bold;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+#botao-novo-usuario {
+	background-color: #193B69;
+	color: white;
+	cursor: pointer;
+	margin-top: 0;
+	padding: 10px 30px;
+	border-radius: 15px;
+	border: none;
+	font-weight: bold;
+	font-size: 16px;
+	margin-bottom: 80px;
+}
+
+/*============================MENU==============================*/
+
+body.pagina-menus {
+	min-height: 100vh;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	font-family: arial , sans-serif;
+	background: linear-gradient(to bottom, #ffffff, #a9c5ee);
+	overflow-x: hidden;
+}
+
+.conteudo {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.container3 {
+	text-align: center;
+}
+
+.container3 h1 {
+	font-size: 28px;
+	color: #194d91;
+}
+
+.container3 p {
+	font-size: 20px;
+	color: #194d91;
+	margin-top: 12px;
+	line-height: 1.4;
+}
+
+.botoes {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 40px;
+	margin-top: 50px;
+}
+
+.botao {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 160px;
+}
+
+.icone-botao {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	cursor: pointer;
+	background: linear-gradient(120deg, #193B69, #4d9fef);
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 70px;
+	transition: transform 0.2s;
+	text-decoration: none;
+}
+
+.icone-botao:hover {
+	transform: scale(1.05);
+}
+
+/*============================RODAPÉ==============================*/
+
+.rodape {
+	background-color: #414141;
+	color: white;
+	padding: 15px 10px;
+	font-size: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.icones-rodape {
+	display: flex;
+	gap: 15px;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+.rodape a {
+	color: white !important;
+	text-decoration: none;
+}
+
+.edge-icon {
+	transform: rotate(75deg);
+	display: inline-block;
+	color: rgb(170, 1, 1);
+}
+
+/*============================CABEÇALHO==============================*/
+
+.cabecalho {
+	background-color: #193B69;
+	padding: 3px 13px;
+	width: 100%;
+	display: flex;
+	align-items: flex-start;
+	position: relative;
+}
+
+.logo-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.edge-icon-header {
+	transform: rotate(75deg);
+	color: rgb(170, 1, 1);
+	font-size: 30px;
+}
+
+.logo-text-header {
+	color: white;
+	font-size: 18px;
+	margin-top: -7px;
+}
+
+.pagina-cadastro .edge-icon-header {
+  margin-top: 4px;
+}
+
+.pagina-cadastro .logo-text-header {
+  margin-top: 2px;
+  margin-bottom: 4px;
+}
+
+.pagina-login .edge-icon-header {
+  margin-top: 4px;
+}
+
+.pagina-login .logo-text-header {
+  margin-top: 2px;
+  margin-bottom: 4px;
+}
+
+.pagina-menus .edge-icon-header {
+  margin-top: 4px;
+}
+
+.pagina-menus .logo-text-header {
+  margin-top: 2px;
+  margin-bottom: 4px;
+}
+
+/*============================SUBMENUS==============================*/
+
+body.tela-2fa,
+body.tela-num-mascara,
+body.tela-google,
+body.tela-sms {
+	min-height: 100vh;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	background: linear-gradient(to bottom, #ffffff, #a9c5ee);
+	overflow-x: hidden;
+	color: #193B69;
+}
+
+.container2 {
+  flex: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.container4,
+.container4-2,
+.container4-3 {
+    text-align: center;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.container4 {
+    margin: 40px auto 200px auto;
+}
+
+.container4-2 {
+    margin: 0 auto 200px auto;
+}
+
+.container4-3 {
+    margin: 0 auto 0 auto;
+}
+
+.container4 h1,
+.container4-2 h1,
+.container4-3 h1 {
+	font-size: 55px;
+	font-weight: 100;
+	margin-top: 0px;
+}
+
+.container4 h2,
+.container4-2 h2,
+.container4-3 h2 {
+	font-size: 25px;
+	margin-top: -10px;
+	font-weight: 100;
+}
+
+.blocos {
+	display: flex;
+	justify-content: center;
+	gap: 50px;
+	margin-top: 30px;
+	flex-wrap: wrap;
+	font-size: 22px;
+	margin-bottom: 150px;
+}
+
+.lado-esquerdo,
+.lado-direito {
+	flex: 1;
+	text-align: left;
+	font-size: 22px;
+}
+
+.lado-esquerdo strong,
+.lado-direito strong {
+	display: block;
+	text-align: center;
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+
+.paragrafos-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 60px;
+	justify-content: space-between;
+	font-size: 22px;
+}
+
+.paragrafo {
+	flex: 1 1 200px;
+	min-width: 200px;
+}
+
+.icon-text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.icon-text i {
+	font-size: 75px;
+}
+
+.icon-text p {
+	margin: 0;
+}
+
+.exemplo {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-bottom: 8px;
+}
+
+.exemplo i {
+	font-size: 35px;
+}
+
+.lado-direito span {
+	font-size: 22px;
+}
+
+.tela-sms .fs-destaque {
+    font-size: 60px;
+}
+
+.tela-sms .fs-icon {
+    font-size: 40px;
+}
+
+/*============================CELULAR==============================*/
+
+.alinhar-cel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.celular {
+    width: 225px;
+    height: 420px;
+    background: black;
+    border-radius: 30px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.tela {
+    background: lightgray;
+    flex: 1;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.mensagem {
+    background: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: -8px;
+	text-align: left;
+	height: 93px
+}
+
+.mensagem p {
+    color: black;
+}
+
+/*============================RESPONSIVIDADE==============================*/
+
+@media (max-width: 768px) {
+  .container4 h1 {
+    font-size: 40px;
+  }
+  
+  .lado-esquerdo, .lado-direito {
+    flex: 1 1 100%;
+  }
+
+  .blocos {
+    margin-bottom: 80px;
+  }
+}
+
+/*============================BORDA NOS INPUT==============================*/
+
+input:invalid, input.invalido {
+  border-color: red !important;
+}
