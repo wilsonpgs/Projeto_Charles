@@ -634,7 +634,7 @@ body.tela-sms {
 	}
 
 	.duplo {
-    flex-direction: column;
+    		flex-direction: column;
  	}
 }
 
