@@ -620,17 +620,22 @@ body.tela-sms {
 /*============================RESPONSIVIDADE==============================*/
 
 @media (max-width: 768px) {
-  .container4 h1 {
-    font-size: 40px;
-  }
   
-  .lado-esquerdo, .lado-direito {
-    flex: 1 1 100%;
-  }
+	.container4 h1 {
+		font-size: 40px;
+	}
+	
+	.lado-esquerdo, .lado-direito {
+		flex: 1 1 100%;
+	}
 
-  .blocos {
-    margin-bottom: 80px;
-  }
+	.blocos {
+		margin-bottom: 80px;
+	}
+
+	.duplo {
+    flex-direction: column;
+ 	}
 }
 
 /*============================BORDA NOS INPUT==============================*/
